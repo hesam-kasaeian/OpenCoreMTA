@@ -2,9 +2,9 @@ Logs = class()
 
 function Logs:__init()
     local logFiles = {
-        ["server"]    = "- IR:VC Server Logs:",
-        ["mysql"]     = "- IR:VC MySQL Logs:",
-        ["anticheat"] = "- IR:VC Anticheat Logs:"
+        ["server"]    = "- OpenCore Server Logs:",
+        ["mysql"]     = "- OpenCore MySQL Logs:",
+        ["anticheat"] = "- OpenCore Anticheat Logs:"
     }
 
     for i,v in pairs(logFiles) do
