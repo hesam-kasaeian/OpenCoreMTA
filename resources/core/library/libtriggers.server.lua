@@ -35,7 +35,7 @@ add_allowed_function = function(funcname)
 end
 
 setup_triggers = function()
-    local triggerKeys = anticheat_class:createTriggerStrings("irvc_server")
+    local triggerKeys = anticheat_class:createTriggerStrings("core")
     local triggerHash = public_hash_key
 
     addEventHandler("onPlayerJoin", root, function() 

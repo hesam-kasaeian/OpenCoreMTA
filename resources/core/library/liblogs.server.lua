@@ -4,7 +4,6 @@ function Logs:__init()
     local logFiles = {
         ["server"]    = "- IR:VC Server Logs:",
         ["mysql"]     = "- IR:VC MySQL Logs:",
-        ["socket"]    = "- IR:VC Socket Logs:",
         ["anticheat"] = "- IR:VC Anticheat Logs:"
     }
 
@@ -30,7 +29,7 @@ function Logs:log(type,message,onlyConsole)
         local hours      = time.hour
         local minutes    = time.minute
         local seconds    = time.second
-        print(type .. " -> [" .. string.format("%02d:%02d:%02d",  hours, minutes, seconds) .. "] IRVC-Logs: " .. message)
+        print(type .. " -> [" .. string.format("%02d:%02d:%02d",  hours, minutes, seconds) .. "] OpenCore-Logs: " .. message)
 
         return true
     end
@@ -45,8 +44,8 @@ function Logs:log(type,message,onlyConsole)
             local minutes    = time.minute
             local seconds    = time.second
 
-            print(type .. " -> [" .. string.format("%02d:%02d:%02d",  hours, minutes, seconds) .. "] IRVC-Logs: " .. message)
-            fileWrite(file, "[" .. string.format("%02d:%02d:%02d",  hours, minutes, seconds) .. "] IRVC-Logs: " .. message .. "\n")
+            print(type .. " -> [" .. string.format("%02d:%02d:%02d",  hours, minutes, seconds) .. "] OpenCore-Logs: " .. message)
+            fileWrite(file, "[" .. string.format("%02d:%02d:%02d",  hours, minutes, seconds) .. "] OpenCore-Logs: " .. message .. "\n")
             fileFlush(file)
             fileClose(file)
 
