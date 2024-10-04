@@ -1,0 +1,6 @@
+<OpenCore>
+    <info author="Hesam" version="1.0.0" name="OpenCore - Core System" description="description" type="script"/>
+    
+    <script src="library/libclass.shared.lua" type="shared"/>
+    <script src="library/libasync.shared.lua" type="shared"/>
+</OpenCore>
