@@ -1,6 +1,11 @@
 <OpenCore>
     <info author="Hesam" version="1.0.0" name="OpenCore - Core System" description="description" type="script"/>
-    
+
     <script src="library/libclass.shared.lua" type="shared"/>
     <script src="library/libasync.shared.lua" type="shared"/>
+    <script src="library/liblogs.server.lua" type="server"/>
+    <script src="library/libanticheat.server.lua" type="server"/>
+    <script src="library/libtriggers.server.lua" type="server" validate="true"/>
+    <script src="library/libtriggers.client.lua" type="client" cache="false" validate="true"/>
+
 </OpenCore>
